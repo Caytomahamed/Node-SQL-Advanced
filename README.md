@@ -20,6 +20,45 @@ Write at `least a paragraph` explaining how you will normalize the data on this 
 | North Blue School  | Mohamed Ali | Hamdi Jama  | English   | English     |
 | Gabi School        | Sarah Yusuf | Fowzi Ahmed | Biology   | Math        |
 
+- [MYNORMALIZE] 
+ Marka Koobaad waxa aan ku dari lahaa ama u samayn lahaa **PRIMARY KEY**.Marka xigta waxaan samayna haa ama abuuri lahaa oo aa uu ka la bixin lahaa sidan 
+ 
+**SCHOOL NAMES** **  
+
+| schoolId | school_name       | class1Id | class2Id |
+| :------- | :---------------- | :------- | :------- |
+| 1        | One Star Academy  | 1        | 1        |
+| 2        | North Blue School | 2        | 2        |
+| 3        | Gabi School       | 3        | 3        |
+
+
+**STUDENT NAMES** **  
+
+| studentId | student_name       |  schoolId | class1Id | class2Id |
+| :-------  | :----------------  | :---------| :------  | :------- |
+| 1         | John Doe           | 1         | 1        | 1        |
+| 2         | Mohamed Ali        | 2         | 2        | 2        |
+| 3         | Sarah Yusuf        | 3         | 3        | 3        |
+| 4         |  Hamdi Jama        | 2         | 2        | 2        |
+| 5         |  Fowzi Ahmed       | 3         | 3        | 3        |
+
+
+**CLASSES 1 ** **  
+
+| class1Id  | class_name1   |   
+| :------- | :------------- | 
+| 1        | Math           |  
+| 2        | English        |
+| 3        | Biology        |
+
+**CLASSES 2 ** **  
+
+| class2Id  | class_name2    |   
+| :-------  | :------------- | 
+| 1         | Science        |  
+| 2         | English        |
+| 3         | Math           |
+
 
 ## Task 3: Stretch Problems
 
