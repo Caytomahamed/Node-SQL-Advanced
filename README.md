@@ -70,64 +70,73 @@ In [SQL Try Editor at W3Schools.com](https://www.w3schools.com/Sql/tryit.asp?fil
 
 **Federal Shipping**
 
- > SELECT COUNT(O.OrderID)
- > FROM Orders AS O
- > INNER JOIN Shippers AS S
- > ON S.ShipperID = O.ShipperID
- > where S.ShipperName = "Federal Shipping"
+```
+  SELECT COUNT(O.OrderID)
+  FROM Orders AS O
+  INNER JOIN Shippers AS S
+  ON S.ShipperID = O.ShipperID
+  where S.ShipperName = "Federal Shipping"
+```
+
 **United Package**
-
- > SELECT COUNT(O.OrderID)
- > FROM Orders AS O
- > INNER JOIN Shippers AS S
- > ON S.ShipperID = O.ShipperID
- > where S.ShipperName = "United Package"
- `
+```
+  SELECT COUNT(O.OrderID)
+  FROM Orders AS O
+  INNER JOIN Shippers AS S
+  ON S.ShipperID = O.ShipperID
+  where S.ShipperName = "United Package"
+```
+ 
 **Speedy Express**
-
- > SELECT COUNT(O.OrderID)
- > FROM Orders AS O
- > INNER JOIN Shippers AS S
- > ON S.ShipperID = O.ShipperID
- > where S.ShipperName = "Speedy Express"
+```
+  SELECT COUNT(O.OrderID)
+  FROM Orders AS O
+  INNER JOIN Shippers AS S
+  ON S.ShipperID = O.ShipperID
+  where S.ShipperName = "Speedy Express"
+```
 
 - Find the top 5 best performing employees measured in number of orders.
-
- > SELECT COUNT(OrderID) , EmployeeID
- > FROM [Orders]
- > GROUP BY EmployeeID
- > ORDER BY Count(OrderID) DESC
- > LIMIT 5
+```
+  SELECT COUNT(OrderID) , EmployeeID
+  FROM [Orders]
+  GROUP BY EmployeeID
+  ORDER BY Count(OrderID) DESC
+  LIMIT 5
+```
 
 - Find the top 5 best performing employees measured in revenue.
 #### NO Table Called a Revenue BUT [GUESS]
-
-  > SELECT COUNT(revenue) , EmployeeID
-  > FROM [revenues]
-  > GROUP BY EmployeeID
-  > ORDER BY Count(revenue) DESC
-  > LIMIT 5
+```
+   SELECT COUNT(revenue) , EmployeeID
+   FROM [revenues]
+   GROUP BY EmployeeID
+   ORDER BY Count(revenue) DESC
+   LIMIT 5
+```
  
 - Find the category that brings in the least revenue.
 #### NO Table Called a Revenue BUT [GUESS]
-
-  > SELECT Min(revenue)
-  > FROM [Revenue]
-  > GROUP BY CategroriesID
-  > ORDER BY Count(revenue) DESC
-  > LIMIT 1
+```
+   SELECT Min(revenue)
+   FROM [Revenue]
+   GROUP BY CategroriesID
+   ORDER BY Count(revenue) DESC
+   LIMIT 1
+```
   
 - Find the customer country with the most orders.
 #### NO cheese product BUT USED  [MozzarelladiGiovanni]
-  > SELECT COUNT(O.OrderID),C.Country
-  > FROM [Orders] As O
-  > INNER JOIN Customers As C 
-  > ON O.CustomerID = C.CustomerID
-  > GROUP BY C.Country
-  > ORDER BY COUNT(*) DESC
+```
+   SELECT COUNT(O.OrderID),C.Country
+   FROM [Orders] As O
+   INNER JOIN Customers As C 
+   ON O.CustomerID = C.CustomerID
+   GROUP BY C.Country
+   ORDER BY COUNT(*) DESC
+```
   
 - Find the shipper that moves the most cheese measured in units.
-
 #### NO cheese product BUT USED  [MozzarelladiGiovanni]
 ```
    SELECT P.ProductName,OD.ProductID,COUNT(OD.ProductID), S.ShipperName as Name
