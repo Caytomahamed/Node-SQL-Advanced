@@ -14,8 +14,8 @@ Write at `least a paragraph` explaining how you will normalize the data on this 
 | North Blue School  | Mohamed Ali | Hamdi Jama  | English   | English     |
 | Gabi School        | Sarah Yusuf | Fowzi Ahmed | Biology   | Math        |
 
-- [MYNORMALIZE] 
-</br>
+## MY NORMALIZE 
+
  ```
  Marka Koobaad waxa aan ku dari lahaa ama u samayn lahaa **PRIMARY KEY**.Marka xigta waxaan samayna haa ama abuuri lahaa oo aa uu ka la bixin lahaa sidan
  ```
