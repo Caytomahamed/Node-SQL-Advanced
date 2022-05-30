@@ -33,7 +33,7 @@ Write at `least a paragraph` explaining how you will normalize the data on this 
 | 3        | Gabi School       | 3        | 3        |
 
 
-**STUDENT NAMES** *
+**STUDENT NAMES** 
 
 | studentId | student_name       |  schoolId | class1Id | class2Id |
 | :-------  | :----------------  | :---------| :------  | :------- |
@@ -125,7 +125,7 @@ In [SQL Try Editor at W3Schools.com](https://www.w3schools.com/Sql/tryit.asp?fil
    LIMIT 1
 ```
   
-- Find the customer country with the most orders.
+`[ ]` Find the customer country with the most orders.
 #### NO cheese product BUT USED  [MozzarelladiGiovanni]
 ```
    SELECT COUNT(O.OrderID),C.Country
