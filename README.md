@@ -14,9 +14,11 @@ Write at `least a paragraph` explaining how you will normalize the data on this 
 | North Blue School  | Mohamed Ali | Hamdi Jama  | English   | English     |
 | Gabi School        | Sarah Yusuf | Fowzi Ahmed | Biology   | Math        |
 
-[MYNORMALIZE] 
+- [MYNORMALIZE] 
 </br>
- `Marka Koobaad waxa aan ku dari lahaa ama u samayn lahaa **PRIMARY KEY**.Marka xigta waxaan samayna haa ama abuuri lahaa oo aa uu ka la bixin lahaa sidan`
+ ```
+ Marka Koobaad waxa aan ku dari lahaa ama u samayn lahaa **PRIMARY KEY**.Marka xigta waxaan samayna haa ama abuuri lahaa oo aa uu ka la bixin lahaa sidan
+ ```
  
 **SCHOOL NAMES**
 
@@ -58,9 +60,7 @@ Write at `least a paragraph` explaining how you will normalize the data on this 
 
 ## Task 3: Stretch Problems
 
-In [SQL Try Editor at W3Schools.com](https://www.w3schools.com/Sql/tryit.asp?filename=trysql_select_top):
-
-- Find the number of shipments by each shipper.
+- [x] Find the number of shipments by each shipper.
 
 **Federal Shipping**
 
