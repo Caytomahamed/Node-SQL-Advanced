@@ -125,7 +125,7 @@ In [SQL Try Editor at W3Schools.com](https://www.w3schools.com/Sql/tryit.asp?fil
    LIMIT 1
 ```
   
-`[ ]` Find the customer country with the most orders.
+[ ] Find the customer country with the most orders.
 #### NO cheese product BUT USED  [MozzarelladiGiovanni]
 ```
    SELECT COUNT(O.OrderID),C.Country
