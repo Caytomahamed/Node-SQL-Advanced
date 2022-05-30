@@ -65,8 +65,85 @@ Write at `least a paragraph` explaining how you will normalize the data on this 
 In [SQL Try Editor at W3Schools.com](https://www.w3schools.com/Sql/tryit.asp?filename=trysql_select_top):
 
 - Find the number of shipments by each shipper.
+
+**Federal Shipping**
+ `
+ SELECT COUNT(O.OrderID)
+ FROM Orders AS O
+ INNER JOIN Shippers AS S
+ ON S.ShipperID = O.ShipperID
+ where S.ShipperName = "Federal Shipping"
+ `
+**United Package**
+ `
+ SELECT COUNT(O.OrderID)
+ FROM Orders AS O
+ INNER JOIN Shippers AS S
+ ON S.ShipperID = O.ShipperID
+ where S.ShipperName = "United Package"
+ `
+**Speedy Express**
+ `
+ SELECT COUNT(O.OrderID)
+ FROM Orders AS O
+ INNER JOIN Shippers AS S
+ ON S.ShipperID = O.ShipperID
+ where S.ShipperName = "Speedy Express"
+ `
 - Find the top 5 best performing employees measured in number of orders.
+
+    `
+    SELECT COUNT(OrderID) , EmployeeID
+    FROM [Orders]
+    GROUP BY EmployeeID
+    ORDER BY Count(OrderID) DESC
+    LIMIT 5
+    `
 - Find the top 5 best performing employees measured in revenue.
+#### NO Table Called a Revenue BUT [GUESS]
+
+ `
+    SELECT COUNT(revenue) , EmployeeID
+    FROM [revenues]
+    GROUP BY EmployeeID
+    ORDER BY Count(revenue) DESC
+    LIMIT 5
+ `
+ 
 - Find the category that brings in the least revenue.
+#### NO Table Called a Revenue BUT [GUESS]
+
+    `
+    SELECT Min(revenue)
+    FROM [Revenue]
+    GROUP BY CategroriesID
+    ORDER BY Count(revenue) DESC
+    LIMIT 1
+    `
 - Find the customer country with the most orders.
+
+  `
+    SELECT COUNT(O.OrderID),C.Country
+    FROM [Orders] As O
+    INNER JOIN Customers As C 
+    ON O.CustomerID = C.CustomerID
+    GROUP BY C.Country
+    ORDER BY COUNT(*) DESC
+  `
 - Find the shipper that moves the most cheese measured in units.
+
+#### NO cheese product BUT USED  [MozzarelladiGiovanni]
+    `
+    SELECT P.ProductName,OD.ProductID,COUNT(OD.ProductID), S.ShipperName as Name
+    FROM [OrderDetails] as OD
+    INNER JOIN Products AS P
+    ON P.ProductID = OD.ProductID
+    INNER JOIN Orders AS O
+    ON O.OrderID = OD.OrderID 
+    INNER JOIN Shippers AS S 
+    ON S.ShipperID = O.ShipperID
+    WHERE P.ProductId = 72
+    Group by Name
+    ORDER BY COUNT(Name) DESC
+    LIMIT 1
+`
